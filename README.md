@@ -6,6 +6,8 @@ Time spent: Approx 7 hours spent in total
 
 ## Pentesting Report
 
+
+
 **Exploit 1: “Upload Same Origin Method Execution”**
 -	[x] Summary: Attacking the system via a user clicking on a malicious comment that alerts the user. This click was led the user to involuntarily installing a plug-in on their system.
     -	Vulnerability type: XSS
@@ -75,6 +77,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 -	[x] Affected source code:
      http://localhost/wp-admin/post.php?post=28&action=edit 
 -	CVE:   2017-6817
+
 
 
 
