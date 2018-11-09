@@ -14,7 +14,8 @@ Time spent: Approx 7 hours spent in total
     -	Tested in version: 4.5.1
     -	Fixed in version: 4.2.8
 - [x] GIF Walkthrough:	
-    -   attack_1.gif
+    -   
+        Codepathweek7/attack_1.gif
 - [x] Steps to recreate: 
 1.	Go to any post.
 2.	Paste the following as a comment:
