@@ -8,7 +8,7 @@ Time spent: Approx 7 hours spent in total
 
 
 
-**Exploit 1: “Upload Same Origin Method Execution”**
+## **Exploit 1: “Upload Same Origin Method Execution”**
 -	[x] Summary: Attacking the system via a user clicking on a malicious comment that alerts the user. This click was led the user to involuntarily installing a plug-in on their system.
     -	Vulnerability type: XSS
     -	Tested in version: 4.5.1
@@ -32,7 +32,7 @@ open('javascript:alert("exploit 1: Same Origin Method Execution")');
 
 
 
-**Exploit 2: “Unauthenticated Stored Cross Site-Scripting (XSS)”**
+## **Exploit 2: “Unauthenticated Stored Cross Site-Scripting (XSS)”**
 -	[x] Summary: Attacking the system when a vulnerable user comes in contact on a malicious webpage that will then alert the user. 
     -	Vulnerability Type: Stored XSS
     -	Tested in version: 4.2
@@ -58,7 +58,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 
 
 
-**Exploit 3: “Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds**
+## **Exploit 3: “Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds**
 -	[x] Summary: Attacking the system via a user clicking on a malicious link that will alert the user. Clicking this embedded “YouTube” link will send an alert to the user. 
     -	Vulnerability types: XSS
     -	Tested in version: 4.0-4.7.2
@@ -81,8 +81,8 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 
 
 
-**Exploit 4: “Authenticated Cross-Site Scripting via Media File Metadata”**
--	[x] Summary: 
+## **Exploit 4: “Authenticated Cross-Site Scripting via Media File Metadata”**
+-	[x] Summary: The attack is executed  by uploading a file with malicous script encoded within the description of the media. When the media is uploaded, the user will be alerted. 
     -	Vulnerability type: Stored XSS
     -	Tested in version: 3.6-4.7.2
     -	Fixed in version: 4.2.13
@@ -100,6 +100,25 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 -	CVE:   2017-6814
 
 
+
+
+## **Exploit 5: “Large File Upload Error XSS”**
+-	[x] Summary: By uploading a file that exceeds the max allowed file size that also has malicious Javascript source code such as "exploit<img src=x onerror=alert(1)>.png" the payload is executed by the server when the file is rejected from being uploaded as it gets displayed in the error message that appears to notify the user that the file is too large.
+    -	Vulnerability type: XSS
+    -	Tested in version: 3.3-4.7.4
+    -	Fixed in version: 4.2.15
+-	[x] GIF Walkthrough:
+    <img src="https://github.com/eddenk/Codepathweek7/blob/master/attack_5.gif" alt="attack_5" title="attack_5" />
+-	[x] Steps to recreate: 
+1.	Upload a media file to WordPress containing an exploit by using the maximum size allowed. 
+2.	Find an image to upload that is above 2MB, and in the name of the file add following code
+
+      <img "src=x onerror=alert(1)">.png
+
+3.	 When attempted to upload the large file, an alert will be sent to the user.
+-	[x] Affected source code:
+      	http://localhost/wp-admin/meda-new.php
+-	CVE:   2017-9061
 
 
 ## Assets
