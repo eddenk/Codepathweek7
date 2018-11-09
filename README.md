@@ -1,4 +1,11 @@
-# Codepathweek7
+# Project 7 - WordPress Pentesting
+
+Time spent: Approx 7 hours spent in total
+
+> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+
+## Pentesting Report
+
 Exploit 1: “Upload Same Origin Method Execution”
 -	[x] Summary: Attacking the system via a user clicking on a malicious comment that alerts the user. This click was led the user to involuntarily installing a plug-in on their system.
     -	Vulnerability type: XSS
@@ -68,6 +75,26 @@ Exploit 3: “Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Emb
 -	[x] Affected source code:
      http://localhost/wp-admin/post.php?post=28&action=edit 
 -	CVE:   2017-6817
+
+
+
+Exploit 4: “Authenticated Cross-Site Scripting via Media File Metadata”
+-	[x] Summary: 
+    -	Vulnerability type: Stored XSS
+    -	Tested in version: 3.6-4.7.2
+    -	Fixed in version: 4.2.13
+-	[x] GIF Walkthrough:
+    -	attack_4.gif
+-	[x] Steps to recreate: 
+1.	Upload a media file to WordPress containing an exploit in the form of metadata 
+2.	If the image uploaded does not contain Metadata already, add it to the description of the media file on the admin console add to the description:
+
+      "filename <script>alert("Exploit 3 Successful");</script>"
+
+3.	 When viewing the attachment page, an alert to the user will pop up.
+-	[x] Affected source code:
+      	http://localhost/wp-admin/upload.php?item=31 
+-	CVE:   2017-6814
 
 
 
