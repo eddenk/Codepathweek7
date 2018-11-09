@@ -92,7 +92,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 1.	Upload a media file to WordPress containing an exploit in the form of metadata 
 2.	If the image uploaded does not contain Metadata already, add it to the description of the media file on the admin console add to the description:
 
-      "filename <script>alert("Exploit 3 Successful");</script>"
+      "filename <script>alert("Exploit 4 Successful");</script>"
 
 3.	 When viewing the attachment page, an alert to the user will pop up.
 -	[x] Affected source code:
