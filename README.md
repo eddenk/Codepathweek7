@@ -2,11 +2,11 @@
 
 Time spent: Approx 7 hours spent in total
 
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document vulnerabilities affecting an old version of WordPress
 
 ## Pentesting Report
 
-Exploit 1: “Upload Same Origin Method Execution”
+**Exploit 1: “Upload Same Origin Method Execution”**
 -	[x] Summary: Attacking the system via a user clicking on a malicious comment that alerts the user. This click was led the user to involuntarily installing a plug-in on their system.
     -	Vulnerability type: XSS
     -	Tested in version: 4.5.1
@@ -30,7 +30,7 @@ open('javascript:alert("exploit 1: Same Origin Method Execution")');
 
 
 
-Exploit 2: “Unauthenticated Stored Cross Site-Scripting (XSS)”
+**Exploit 2: “Unauthenticated Stored Cross Site-Scripting (XSS)”**
 -	[x] Summary: Attacking the system when a vulnerable user comes in contact on a malicious webpage that will then alert the user. 
     -	Vulnerability Type: Stored XSS
     -	Tested in version: 4.2
@@ -56,7 +56,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 
 
 
-Exploit 3: “Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+**Exploit 3: “Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds**
 -	[x] Summary: Attacking the system via a user clicking on a malicious link that will alert the user. Clicking this embedded “YouTube” link will send an alert to the user. 
     -	Vulnerability types: XSS
     -	Tested in version: 4.0-4.7.2
@@ -78,7 +78,7 @@ Exploit 3: “Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Emb
 
 
 
-Exploit 4: “Authenticated Cross-Site Scripting via Media File Metadata”
+**Exploit 4: “Authenticated Cross-Site Scripting via Media File Metadata”**
 -	[x] Summary: 
     -	Vulnerability type: Stored XSS
     -	Tested in version: 3.6-4.7.2
