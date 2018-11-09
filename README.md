@@ -14,8 +14,7 @@ Time spent: Approx 7 hours spent in total
     -	Tested in version: 4.5.1
     -	Fixed in version: 4.2.8
 - [x] GIF Walkthrough:	
-    -   
-        Codepathweek7/attack_1.gif
+     <img src="https://github.com/eddenk/Codepathweek7/blob/master/attack_1.gif" alt="attack_1" title="attack_1" />
 - [x] Steps to recreate: 
 1.	Go to any post.
 2.	Paste the following as a comment:
@@ -39,7 +38,7 @@ open('javascript:alert("exploit 1: Same Origin Method Execution")');
     -	Tested in version: 4.2
     -	Fixed in version: 4.2.1
 -	[x] GIF Walkthrough:
-    -	attack_2.gif
+    <img src="https://github.com/eddenk/Codepathweek7/blob/master/attack_2.gif" alt="attack_2" title="attack_2" />
 -	[x] Steps to recreate: 
 1.	Go to any post
 2.	Paste the following on a comment
@@ -65,7 +64,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
     -	Tested in version: 4.0-4.7.2
     -	Fixed in version: 4.2.13
 -	[x] GIF Walkthrough:
-    -	attack_3.gif
+    <img src="https://github.com/eddenk/Codepathweek7/blob/master/attack_3.gif" alt="attack_3" title="attack_3" />
 -	[x] Steps to recreate: 
 1.	Create new post 
 2.	Inside the body of the new post insert this code
@@ -88,7 +87,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
     -	Tested in version: 3.6-4.7.2
     -	Fixed in version: 4.2.13
 -	[x] GIF Walkthrough:
-    -	attack_4.gif
+    <img src="https://github.com/eddenk/Codepathweek7/blob/master/attack_14.gif" alt="attack_4" title="attack_4" />
 -	[x] Steps to recreate: 
 1.	Upload a media file to WordPress containing an exploit in the form of metadata 
 2.	If the image uploaded does not contain Metadata already, add it to the description of the media file on the admin console add to the description:
