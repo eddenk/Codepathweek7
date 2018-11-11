@@ -103,7 +103,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
 
 
 ## **Exploit 5: “Large File Upload Error XSS”**
--	[x] Summary: By uploading a file that exceeds the max allowed file size that also has malicious Javascript source code such as "exploit<img src=x onerror=alert(1)>.png" the payload is executed by the server when the file is rejected from being uploaded as it gets displayed in the error message that appears to notify the user that the file is too large.
+-	[x] Summary: By uploading a file that exceeds the max allowed file size that also has malicious Javascript source code such as "exploit<"img src=x onerror=alert(1")>.png", without the inner quotes, the payload is executed by the server when the file is rejected from being uploaded as it gets displayed in the error message that appears to notify the user that the file is too large.
     -	Vulnerability type: XSS
     -	Tested in version: 3.3-4.7.4
     -	Fixed in version: 4.2.15
