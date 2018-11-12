@@ -111,7 +111,7 @@ AAAAAAAAAAAAAAAAAAAAAAA…’></a>
     <img src="https://github.com/eddenk/Codepathweek7/blob/master/attack_5.gif" alt="attack_5" title="attack_5" />
 -	[x] Steps to recreate: 
 1.	Upload a media file to WordPress containing an exploit by using the maximum size allowed. 
-2.	Find an image to upload that is above 2MB, and in the name of the file add following code
+2.	Find an image to upload that is above 2MB, and in the name of the file add following code without the internal quotes.
 
       <img "src=x onerror=alert(1)">.png
 
